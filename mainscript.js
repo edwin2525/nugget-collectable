@@ -1,4 +1,4 @@
-url = 'http://ip-api.com/json?callback=?'
+url = 'http://ip-api.com/json/'
 
 async function get(url)
 {
