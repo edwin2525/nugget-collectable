@@ -7,7 +7,7 @@ async function get(url)
     const parsedText=JSON.parse(text);
  	console.log(parsedText);
  	document.getElementById("location").innerHTML = 
-		'It only appears for people in ' + parsedText.city + ". Lucky you!";
+		'It only appears for people in ' + parsedText.location.city + ". Lucky you!";
 }
 
 get(url);
