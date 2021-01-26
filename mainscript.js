@@ -1,4 +1,4 @@
-url = 'https://api.ipgeolocation.io/ipgeo?apiKey=f1227ae10f134b2588b506168fabe5a8'
+url = 'https://api.ipregistry.co/?key=pdq7yaeic27q85'
 
 async function get(url)
 {
@@ -7,7 +7,7 @@ async function get(url)
     const parsedText=JSON.parse(text);
  	console.log(parsedText);
  	document.getElementById("location").innerHTML = 
-		'It only appears for people in ' + parsedText.state_prov + ". Lucky you!";
+		'It only appears for people in ' + parsedText.city + ". Lucky you!";
 }
 
 get(url);
