@@ -10,7 +10,7 @@ async function get(url)
  	.replace(/\)[^(]*$/, "")
  	.split(/\)[^(]*\(/));
  	console.log(parsedText);
- 	document.getElementById("location").innerHTML = 'It only appears for people in ' + parsedText.city + ", " + parsedText.regionName + ", " + parsedText.country + ". Lucky you!";
+ 	document.getElementById("location").innerHTML = 'It only appears for people in ' + parsedText.geoplugin_city + ", " + parsedText.geoplugin_regionName + ", " + parsedText.geoplugin_countryName + ". Lucky you!";
 }
 
 get(url);
