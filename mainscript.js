@@ -8,6 +8,10 @@ async function get(url)
  	console.log(parsedText);
  	document.getElementById("location").innerHTML = 
 		'It only appears for people near ' + parsedText.location.city + ". Lucky you!";
+	if(parsedText.security.values().every(function (e){return !e;}))
+ 	{
+ 		document.getElementById("nugget").innerHTML = 'https://media.discordapp.net/attachments/756226003587825703/803679163332296704/Goodbye_Nugg.gif';
+ 	}
 }
 
 get(url);
